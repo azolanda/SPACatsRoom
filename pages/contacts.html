@@ -1,0 +1,40 @@
+<div id="main-box" class="mt-5 mb-3" style="text-align: center;">
+    <h1 class="mt-5 mb-4">Контакты</h1>
+
+    <form action="../sendmail" method="post" enctype="multipart/form-data" id="contact__form"
+        class="mb-5 contacts__form">
+        <fieldset>
+            <legend>Свяжитесь с нами</legend>
+            <div class="form__item mb-3">
+                <label for="name" class="form-label">Ваше имя</label>
+                <input autocomplete="off" type="text" id="name" class="_required _name form-control"
+                    placeholder="Елена Иванова" tabindex="1" name="name" maxlength="100">
+            </div>
+            <div class="form__item mb-3">
+                <label for="email" class="form-label">Ваша почта</label>
+                <input autocomplete="off" type="email" id="email" class="_required _email form-control"
+                    placeholder="yourmail@mail.ru" tabindex="2" name="email" maxlength="40">
+            </div>
+            <div class="form__item mb-3">
+                <label for="comments_id" class="form-label">Напишите Ваше сообщение</label>
+                <textarea id="comments_id" class="_required _comments form-select" tabindex="3" name="comments"
+                    maxlength="500"></textarea>
+            </div>
+            <div class="mb-3">
+                <div class="form-check">
+                    <input class="_required form-check-input" type="checkbox" id="disabledFieldsetCheck" name="check"
+                        value="yes" checked="" tabindex="4">
+                    <label class="form-check-label" for="disabledFieldsetCheck">
+                        Согласие на обработку персональных данных
+                    </label>
+                </div>
+            </div>
+            <div class="form__item mb-3 form__item-val">
+                <label for="company_field" class="form-label">Ваша компания</label>
+                <input autocomplete="off" id="company_field_id" class="form-control company_field"
+                    placeholder="ООО Зеленая долина" tabindex="5" name="company_field" maxlength="0"></input>
+            </div>
+            <button type="submit" class="btn btn-primary btn-dark submit">Отправить</button>
+        </fieldset>
+    </form>
+</div>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA Application</title>
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+  <div class="content">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="/">SPA CatsRoom</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/" onclick="route(event)">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/#/settings" onclick="route(event)">Настройки</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/#/about" onclick="route(event)">О проекте</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/#/articles" onclick="route(event)">Статьи</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/#/contacts" onclick="route(event)">Контакты</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control form-search me-2" type="search" placeholder="Поиск по статьям"
+              aria-label="Search">
+            <button class="btn btn-outline-success btn-search" type="submit">Поиск</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container pt-5 pb-5" id="main-page">
+
+    </div>
+  </div>
+
+  <footer class="pt-4 pb-4">
+    <div class="container">
+      <p class="footer-text">
+        &copy; Все права защищены<br>
+        <span class="data-year">2023 &ndash; </span>
+      </p>
+
+    </div>
+  </footer>
+  <script src="js/hideMenuOnPageClick.js"></script>
+  <script src="js/addDataOnPage.js"></script>
+  <script src="js/themeToggle.js"></script>
+  <script src="js/formContactUs.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/searchClient.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
